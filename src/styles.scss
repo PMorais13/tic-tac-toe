@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 0px;
+  margin: 0px
+}
+
+.flex {
+  display: flex;
+}
+
+.yellow {
+  filter: invert(94%) sepia(94%) saturate(5942%) hue-rotate(311deg) brightness(103%) contrast(101%);;
+}
+
+.blue {
+  filter: invert(86%) sepia(72%) saturate(4861%) hue-rotate(151deg) brightness(94%) contrast(93%);
+}
+
+.silver {
+  filter: invert(79%) sepia(33%) saturate(147%) hue-rotate(153deg) brightness(91%) contrast(85%);
+}

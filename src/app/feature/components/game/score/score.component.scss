@@ -1,0 +1,43 @@
+.score-display {
+  width: 140px;
+  height: 72px;
+  margin: 0px 10px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0px;
+    color: #1A2A33;
+  }
+
+  p:first-child {
+    // display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.875px;
+  }
+}
+
+.score-display:first-child {
+  margin-left: 0px;
+}
+
+.score-display:last-child {
+  margin-right: 0px;
+}
+
+.center {
+  justify-content: center;
+}
+
+

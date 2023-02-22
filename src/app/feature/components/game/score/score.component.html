@@ -1,0 +1,12 @@
+<div class="flex center">
+  <div
+    *ngFor="let score of listScore"
+    class="flex score-display"
+    [ngStyle]="{ 'background-color': score.backgroundColor }"
+  >
+    <div>
+      <p>{{ score.label }}</p>
+      <p>{{ score.score }}</p>
+    </div>
+  </div>
+</div>

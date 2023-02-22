@@ -1,0 +1,57 @@
+<section>
+  <div>
+    <div class="icons">
+      <img
+        class="icon yellow"
+        src="./../../../../assets/images/icons8-x-50.png"
+        alt="X"
+      />
+
+      <img
+        class="icon blue"
+        src="./../../../../assets/images/icons8-o-50.png"
+        alt="O"
+      />
+    </div>
+
+    <div class="card">
+      <h1>PICK PLAYER 1’S MARK</h1>
+
+      <div class="switch-button flex">
+        <div>
+          <button
+            [ngClass]="activyX ? 'activy' : 'unactivy'"
+            (click)="clickButton(true)"
+          >
+            <img
+              [ngClass]="!activyX ? 'silver' : ''"
+              class="icon"
+              src="./../../../../assets/images/icons8-x-50.png"
+              alt="X"
+            />
+          </button>
+        </div>
+        <div>
+          <button
+            [ngClass]="!activyX ? 'activy' : 'unactivy'"
+            (click)="clickButton(false)"
+          >
+            <img
+              [ngClass]="activyX ? 'silver' : ''"
+              class="icon"
+              src="./../../../../assets/images/icons8-o-50.png"
+              alt="O"
+            />
+          </button>
+        </div>
+      </div>
+
+      <h2>REMEMBER : X GOES FIRST</h2>
+    </div>
+
+    <div class="group-button">
+      <button buttonPrimary (click)="selectTypeGame(1)">NEW GAME (VS CPU)</button>
+      <button buttonSecondary (click)="selectTypeGame(2)">NEW GAME (VS PLAYER)</button>
+    </div>
+  </div>
+</section>
